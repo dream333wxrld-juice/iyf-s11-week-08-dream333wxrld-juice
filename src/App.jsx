@@ -1,4 +1,9 @@
 import './App.css'
+import Button from './components/Button'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Sidebar from './components/Sidebar'
+import PostList from './components/PostList'
 
 function App() {
   const name = "Gilbert Mungai"
@@ -16,6 +21,7 @@ function App() {
 
   return (
     <div>
+      <Header />
       <h1>{name}</h1>
 
       <p>
@@ -33,8 +39,12 @@ function App() {
       </p>
 
       <p>Today's date: {today}</p>
+      <Button />
 
       <p>{greeting}</p>
+      <PostList />
+      <Sidebar />
+      <Footer />
     </div>
   )
 }
