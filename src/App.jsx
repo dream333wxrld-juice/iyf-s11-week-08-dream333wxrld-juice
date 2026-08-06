@@ -6,6 +6,11 @@ import Button from './components/Button'
 import PostList from './components/PostList'
 import Card from './components/Card'
 import Greeting from './components/Greeting'
+import Counter from './components/Counter'
+import Toggle from './components/Toggle'
+import UserForm from './components/UserForm'
+import EventExamples from './components/EventExamples'
+import ContactForm from './components/ContactForm'
 
 function App() {
   const name = "Gilbert Mungai"
@@ -62,6 +67,14 @@ function App() {
         <Card title="Outlined Example" variant="outlined">
           <p>A third card showing the outlined variant.</p>
         </Card>
+        
+        <h2>State & Events</h2>
+        <Counter />
+        <Toggle />
+        <UserForm />
+        <EventExamples />
+        <ContactForm />
+
 
         <div style={{ display: 'flex', gap: '2rem' }}>
           <PostList />
