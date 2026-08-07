@@ -2,16 +2,17 @@ function Button({
   text = "Click me",
   variant = "primary",
   size = "medium",
-  disabled = false
+  disabled = false,
+  loading = false
 }) {
   return (
     <button
       className={`btn btn-${variant} btn-${size}`}
-      disabled={disabled}
+      disabled={disabled || loading}
     >
-      {text}
+      {loading ? "Loading..." : text}
     </button>
-  );
+  )
 }
 
-export default Button;
+export default Button
